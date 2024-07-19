@@ -1,96 +1,51 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <!-- configura a codificação de caracteres do navegador para o UTF-8-->
     <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
-    <!-- Adiciona o ícone de aba de navegador-->
     <link rel="stylesheet" href="css/conteudo.css">
-    <!--link rel="stylesheet" href="css/menulateral.css"-->
     <title>HOME - IFSP - Pirituba</title>
-    <!-- Adiciona o título na aba do navegador-->
-
-    <!--script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-</script-->
-
-    <script src="js/disabling.js"></script>
-
 </head>
-
 <body>
 
-    <header id="cabecalho">
-        <!-- Indica o cabeçalho do nosso documento-->
+<header id="cabecalho">
+    <nav>
+        <object width="100%" height="200px" data="menu.html"></object>
+    </nav>
+</header>
 
-        <nav>
-            <object width="100%" height="200px" data="menu.html"></object>
-        </nav>
+<main>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="Imagens/eleicoes.jpg" alt="Eleições">
+            <h2>Eleições Estudantis</h2>
+            <p>Participe das eleições para representante estudantil!</p>
+        </div>
+        <div class="grid-item">
+            <img src="Imagens/snct.jpg" alt="SNCT">
+            <h2>SNCT - Semana Nacional de Ciência e Tecnologia</h2>
+            <p>Venha participar de atividades e palestras sobre ciência e tecnologia.</p>
+        </div>
+        <div class="grid-item">
+            <img src="Imagens/residencia.jpg" alt="Residência Estudantil">
+            <h2>Residência Estudantil</h2>
+            <p>Conheça mais sobre o programa de residência estudantil do IFSP.</p>
+        </div>
+        <div class="grid-item">
+            <img src="Imagens/maratona.jpg" alt="Maratona de Programação">
+            <h2>Maratona de Programação</h2>
+            <p>Prepare-se para a competição de programação!</p>
+        </div>
+    </div>
+</main>
 
-    </header>
+<footer>
+    <br><br>
+    <object width="100%" height="200px" data="rodape.html"></object>
+</footer>
 
-    <main id="conteudo">
-        <!-- indica que é o conteúdo principal dessa página -->
-
-        <!--nav>
-
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="biblioteca.html">Biblioteca</a>
-    <a href="localizacao.html">Localização</a>    
-  </div>
-
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-</nav-->
-
-
-        <aside>
-            <!-- indica que é um conteúdo a parte do princial, auxiliar-->
-            <h1>Acontece no IFSP!</h1>
-            <figure>
-                <img src="Imagens/SEJA_RARO.jpg" alt="Palestra Seja Raro" width="50%" height="50%">
-                <figcaption>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</figcaption>
-            </figure>
-        </aside>
-
-        <section>
-            <h1>
-                Conheça os desafios de inovação
-            </h1>
-            <div class="videoWrapper">
-                <p align="center">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </p>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <br><br>
-        <object width="100%" height="200px" data="rodape.html"></object>
-
-    </footer>
-
-    <!-- Adicionar scripts abaixo apenas para publicação no Firebase -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.8.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+<script src="/__/firebase/8.8.1/firebase-app.js"></script>
+<script src="/__/firebase/init.js"></script>
 
 </body>
-
 </html>
